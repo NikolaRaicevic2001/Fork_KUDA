@@ -55,11 +55,11 @@ def get_tabletop_points(rgb_list, depth_list, R_list, t_list, intr_list, bbox, d
 
 
 def main():
-    use_robot = True  # whether the robot is connected. Set to False for cam-only env
-    calibrate = True  # whether to calibrate the camera. If false, use the pre-calibrated camera parameters
-    use_wrist_cam = True  # whether the wrist camera is connected. When doing hand-eye calibration, must be True
-    gripper_enable = False  # whether to use the gripper. If changed to other end effectors, should be False
-    num_fixed_cams = 4  # the number of fixed cameras connected to the computer
+    use_robot = True            # whether the robot is connected. Set to False for cam-only env
+    calibrate = True            # whether to calibrate the camera. If false, use the pre-calibrated camera parameters
+    use_wrist_cam = True        # whether the wrist camera is connected. When doing hand-eye calibration, must be True
+    gripper_enable = False      # whether to use the gripper. If changed to other end effectors, should be False
+    num_fixed_cams = 1          # the number of fixed cameras connected to the computer
 
     env = RealEnv(
         WH=[1280, 720],

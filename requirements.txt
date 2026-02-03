@@ -1,6 +1,6 @@
 opencv-contrib-python
 openai==0.28.1
-numpy
+numpy<2
 open3d
 atomics
 av
@@ -23,7 +23,7 @@ timm==0.6.7
 einops
 scikit-image
 scikit-learn
-cupy==12.2.0
+cupy-cuda11x==12.2.0
 git+https://github.com/openai/CLIP.git
 git+https://github.com/xArm-Developer/xArm-Python-SDK.git
 git+https://github.com/IDEA-Research/Grounded-Segment-Anything.git#subdirectory=segment_anything
